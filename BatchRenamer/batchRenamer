@@ -1,0 +1,22 @@
+#!/bin/bash
+
+: 'This script can be used to rename the files within a directory, as 
+numbers. For this example of script, the input is taken as all jpg
+images. And set the value of count to a starting number from where
+you want to start renaming.'
+
+ls *.jpg>pics
+
+: 'For example, variable count is equal to 1
+currently, so the files within current directory will be renamed like
+1.jpg 2.jpg and so on.'
+
+let count=1
+
+: 'The following while loop will iterate through the file pics created
+above line by line till end of file and execute command mv to rename.'
+
+while read line; 
+    do mv $line $count.jpg;
+    ((count++)); 
+done<pics
