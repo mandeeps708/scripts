@@ -5,7 +5,10 @@ numbers. For this example of script, the input is taken as all jpg
 images. And set the value of count to a starting number from where
 you want to start renaming.'
 
-ls *.jpg>pics
+
+# The -v option is for natural sort of (version) numbers within text
+
+ls -v *.jpg>pics
 
 : 'For example, variable count is equal to 1
 currently, so the files within current directory will be renamed like
