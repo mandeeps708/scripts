@@ -1,0 +1,252 @@
+<translate>
+<!--T:29-->
+{{TutorialInfo
+|Topic=Macros
+|Level=Beginner
+|Time=
+|Author=
+|FCVersion=
+|Files=
+}}
+
+
+<!--T:1-->
+This page contains macros to add functionality to your freecad installation
+
+== Macros == <!--T:2-->
+
+=== Object creation === <!--T:3-->
+* [[Image:Macro_makeCube.png|16px]] {{MacroLink|Macro makeCube}} : creates a [http://en.wikipedia.org/wiki/Cuboid rectangular cuboid] from 4 points
+* {{MacroLink|Macro Solid Sweep}}: creates a solid by sweeping a 2D profile along a trajectory previously selected in the 3D view. The 2D elements can be created through the regular tools in FreeCAD's GUI.
+* {{MacroLink|Macro Rectellipse}}: creates a parametric rectellipse
+* [[Image:Macro_Draft_Circle_3_Points.png|16px]] {{MacroLink|Macro_Make_Circle_3_Points}}: creates a circle on 3 selected points, the points can be objects (this example brings together the two examples below, all parameters simply settle on a graphic window).
+* [[Image:Macro_Draft_Circle_3_Points.png|16px]] {{MacroLink|Macro Draft Circle 3 Points}}: creates a circle from 3 selected points 2D orthogonal
+* [[Image:Macro_Draft_Circle_3_Points.png|16px]] {{MacroLink|Macro Draft Circle 3 Points 3D}}: creates a circle from 3 selected points in the space 3D
+* {{MacroLink|Macro screw maker1_2}}: This macro creates a screw with or without thread, according to ISO standards ([http://forum.freecadweb.org/viewtopic.php?f=22&t=6088#p48519 screw_maker1_6.py.zip with Pyside support]). [http://forum.freecadweb.org/viewtopic.php?f=22&t=6558&start=30#p95929 (Screw Maker 2.0 - new version!)]  
+* {{MacroLink|Macro GeodesicDome}}: This macro creates a geodesic dome shell
+* [[Image:Macro_BOLTS.png|16px]] {{MacroLink|Macro BOLTS}}: The aim of BOLTS is to build a free and open-source standard parts library for CAD applications.
+* {{MacroLink|Macro Ellipse-Center+2Points}} Makes an ellipse by selecting three points (in this order): centre, major radius and minor radius
+* {{MacroLink|Macro Airfoil Import & Scale}} : Imports and scales a .dat airfoil to desired chord length.
+* {{MacroLink|Macro Line Length}}: Create a line giving coordinate XYZ length and angle to plane X Y
+* {{MacroLink|Macro cutLine}}: Cut a line and create x points, giving the number of points, create line or not, create points or not, create bicolor or not on choice.
+* {{MacroLink|Macro circle}}: Create a circle or arc giving radius, diameter, circumference, area, startangle, endangle, arc, anglecenter, cord, arrow, center (point) on choice.
+* {{MacroLink|Macro cutCircle}}: Cut a circle or arc and create x arcs, giving the number of cut.
+*[[Image:Macro_FCConvertLines.png|16px]] {{MacroLink|Macro FCConvertLines}}: this macro convert the object line, wire in line Dash, DashDot, DashDotDot,ZigZag and Hand with the dimensions given.
+* {{MacroLink|Macro_triangleAH}}: This macro create one triangle creates a triangle by giving the head angle and the height of the triangle (the triangle of the head is positioned to the xyz coordinates 0.0)
+* [[Image:FCTexture.png|16px]] {{MacroLink|Macro FCTexture}}: Create a project from a bmp image to create a texture easily
+* [[Image:FCCreaLoft.png|16px]] {{MacroLink|Macro FCCreaLoft}}: Create a loft with a list of wire (specially created for Macro FCTexture see above)
+* [[Image:FreeCAD Doc.png|16px]] {{MacroLink|Macro PartsLibrary}}: Starts the Parts library browser
+* [[Image:BoundBoxTracing.png|16px]] {{MacroLink|Macro BoundingBox Tracing}} : This macro red trace (editable) around the BoundingBox with 6 rectangles
+* [[File:FCCircularTextButtom.png|16px]] {{MacroLink|Macro FCCircularText}}: This macro create a text around a cylinder
+* [[Image:GW_Dim.png|16px]] {{MacroLink|Macro Geneva Wheel}}: Allows the user to create a Geneva wheel mechanism from scratch. Must edit values within the Macro to alter the size of the object.
+* [[Image:GW_Dim.png|16px]] {{MacroLink|Macro Geneva Wheel GUI}}: A GUI front end that allows the user to create a Geneva wheel mechanism from scratch.
+* {{MacroLink|Macro WireXYZ}}: This macro creates a Wire with the coordinates extracted from a file. The coordinates X Y Z are separated by a space.
+* [[File:FCSpring_Helix_Variable.png|16px]] {{MacroLink|Macro_FCSpring_Helix_Variable}}: This macro create one spring truncate, the troncature is adjustable on the all coil to choice.
+* {{MacroLink|Macro_ArchAxisSystemRepartition}}: This macro help you to create an Arch Axis System along a line with a set of parameters.
+* {{MacroLink|Macro Cabinets32}}: creates side and top/bottom walls for a cabinet with drilled holes for connection parts of manufacturer Hettich.
+* [[File:Macro_Half_Hull_Model.png|24px]] {{MacroLink|Macro Half-Hull Model}}: This macro generates both three dimensional [http://en.wikipedia.org/wiki/Half_hull_model_ship half-hull] and full-hull models from a series of 2D line drawings.
+* {{MacroLink|Macro Stairs}}: Create stair helix, create your stair nosing select and run the macro.
+* [[Image:Macro_ReproWire.png|16px]] {{MacroLink|Macro_ReproWire}}: This macro reproduce all element selected subobject wire or face.
+* [[Image:Gearworkbech.png|16px]] {{MacroLink|Macro FCGear}}: Additional Workbench to create different types of gears, involute gear, involute rack, cycloide gear, bevel gear.
+
+=== Object transformation === <!--T:4-->
+* {{MacroLink|Macro ArrayCopy}}: copies the selected object several times, on an array grid
+* {{MacroLink|Macro FlattenWire}}: flattens draft wires that are not planar to their median Z coordinate
+* {{MacroLink|Macro FlattenWire3Points}}: flattens draft wires that are not planar to a plane defined by 3 points
+* {{MacroLink|Macro MeshToPart}}:  converts selected meshes to parts
+* [[Image:PartToVRML.png ‎|16px]] {{MacroLink|Macro PartToVRML}}: Converts selected parts to VRML meshes for small size and faster loading (VRML models Kicad and Blender compatible)
+* {{MacroLink|Macro JointWire}}: allows to find and joint all non connected edge to the closest non connected one using a line
+* {{MacroLink|Macro Remove parametric history}}: removes all parametric associativity from an object, leaving it as a "dumb" shape
+* {{MacroLink|Macro SuperWire}}: Forces the creation of a Wire from lines and arcs that don't necessarily touch each other. Use this if normal wire operation fails
+* {{MacroLink|Macro HealArcs}}: Sometimes arcs are transformed into BSplines, for example when scale operations have been applied to them. This macro recreates valid arcs from them. Useful before exporting to dxf
+* {{MacroLink|Macro FaceToSketch}}: Converts the selected Face to a single Sketch without constraints.
+* {{MacroLink|Macro EdgesToArc}}: Converts the selected Edges to a circular Arc if possible. Useful for restoring discretized arcs.
+* [[Image:Macro_CloneConvert.png ‎|16px]] {{MacroLink|Macro CloneConvert}}: Creates a clone of the object and the converted in the chosen position and size (inch, mm, m, µm...). The base object is recognized in mm (FreeCAd base)
+* {{MacroLink|Macro Creating faces from a DXF file}}: This macro create face from a DXF file, the "Layer" are recognized separate and trained in groups.
+* {{MacroLink|Macro Image Scaling}}: Macro for easy scaling drawings, graphics, diagram, blueprint and similar 2D images in Image workbench.
+* {{MacroLink|Macro MatrixTransform]]: apply linear space transformations to distort shapes. E.g., non-uniform scaling, shearing, mirroring, axes swapping.
+* [[Image:Macro_Connect_And_Sweep.png ‎|24px]] {{MacroLink|Macro_Connect_And_Sweep}}: This macro easily creates a connection between two objects, an object and a point or between two points (the center of the objects are the starting and ending points of the sweep) can be selected form a configurable ellipse polygon circle
+
+=== 3D View operations === <!--T:5-->
+* {{MacroLink|Macro Rotate View}} This macro rotates the current view by 90° to the left. Only works if you are in Top view.
+* {{MacroLink|Macro View Rotation}} Provides a GUI to permit rotation of view by precise amounts in all three directions.
+* {{MacroLink|Macro Texture Objects}} This macro allows you to temporarily put a texture image on the selected objects.
+* {{MacroLink|Macro Mouse Cross}} This small macro turns the arrow of the mouse in a precision cross.
+* {{MacroLink|Macro Align View to Face}} This macro aligns the current view to a selected face.
+* {{MacroLink|Macro Align Object to View}} This macro align the selected object to the current View and set the coordinates Placement of the camera.
+* {{MacroLink|Macro Align Face Object to View}} This macro align the face of the selected object to the current View (in case face hole the hole is placed to the view).
+* {{MacroLink|Macro_Duplicate_Selection}}  This macro testing if one selection are duplicate , select the object IN THE 3D VIEW the "ForbiddenCursor" stay if the or one selection is duplicate, the macro stay resident.
+
+=== Wizards === <!--T:6-->
+* {{MacroLink|Macro SheetMetalUnfolder}}: Creates an unfolded part from a sheet-metal-part.
+* {{MacroLink|Macro unrollRuledSurface}}: allows to unroll ruled surfaces and to draw them on a page.
+* {{MacroLink|Macro unfoldBox}}: allows to unfold the surfaces of a box of any shape and to draw them on a page.
+* {{MacroLink|Macro Geneva Wheel GUI}}: A GUI front end that allows the user to create a Geneva wheel mechanism from scratch.
+* [[Image:Part_Prism_Apothem.svg|16px]] {{MacroLink|Macro Apothem Based Prism GUI}} A GUI dialog that creates an Apothem, (inradius) Based Prism from user input.
+
+=== Utility === <!--T:7-->
+* {{MacroLink|Macro MessageBox}}: shows how to give information to the user through the GUI.
+* [[Image:FCInfo.png|16px]] {{MacroLink|Macro_FCInfo}} : Gives a series of information about the selected shape and can display a conversion of length, inclination (degrees, radian, grade) shape, surface, volume and the weight of the form in the density selected in various international and Anglo-Saxon  units
+* [[Image:FCInfo.png|16px]] {{MacroLink|Macro FCInfo Alternate Linux}} : same as above, but for Linux
+* [[Image:Macro_FCInfoGlass.png|16px]] {{MacroLink|Macro FCInfoGlass}} : Gives a series of information about the selected shape and displayed in screen 3D
+* [[Image:FCInfoToMouse.png|16px]] {{MacroLink|Macro FCInfoToMouse}} : Provide informations coordinates, length and angles in real time on the mouse in a bubble annotation displayed in the 3D screen
+* {{MacroLink|Macro 3d Printer Slicer}}: Exports current design to slicer software or CAM software.
+* {{MacroLink|Macro Delta xyz}} : Gives the Delta values and the distance between 2 points
+* [[File:CenterFace.png|16px]] {{MacroLink|Macro CenterFace}} : This macro red trace (editable) the center face (mass) with 1 point and print the coordinates
+* {{MacroLink|Macro ObjectInfo}}: User-friendly "Info" module created by a FreeCAD user
+* {{MacroLink|Macro MacroMenu}}: Add the macros found in the macros folder to the Macros menu of FreeCAD
+* [[Image:Force_Recompute.png|16px]] {{MacroLink|Macro_ForceRecompute}} : Forces manual recompute of model
+* {{MacroLink|Macro Shake Sketch}}: Shake a sketch in order to discover its unconstrained parts.
+* [[Image:Replace_Part.png|16px]] {{MacroLink|Macro Replace Part in Assembly}}: Replaces a part (simple copy) in an "Assembly" with another Part (simple copy).
+* [[File:WF_wf.png|16px]] {{MacroLink|Macro WorkFeatures}}: Tool utility to create plans of the axes, planes from 3 points, axes on a form, information on the coordinates of the shape and many other useful features to facilitate the creation of your project. This utility is up next in the combo view.
+* [[File:Macro_Dump_Objects.png|24px]] {{MacroLink|Macro Dump Objects}}: This macro generates a listing of all objects in the current document - the list can be in a window or on the Report view.
+* {{MacroLink|Macro Manage Navigational Style}}: This pair of macros allow you to alter the Navigation Style while in the Sketcher.
+* [[File:Macro_Toggle_Drawstyle.png|16px]] {{MacroLink|Macro Toggle Drawstyle}}: This macro toggles the Drawstyle of the selected object
+* [[File:Macro_Toggle_Views_Visibility.png|16px]] {{MacroLink|Macro Toggle Views Visibility}}: This macro toggles the visibility of various supporting views in FreeCAD, allowing the main window to be viewed with all available screen space.
+* [[File:Macro_Python_Assistant_Window.png|16px]] {{MacroLink|Macro Python Assistant Window}}: This macro provides a cut/copy/paste workspace for Python code, it is segmented so different sections can be selected and it is persistent between FreeCAD sessions.
+* [[File:Macro_Build_Utility.png|16px]] {{MacroLink|Macro Build Utility}}: This macro provides a utility to assemble a project from sub-project files using the Merge Project facility.
+* [[File:FCCamera_00.png|16px]] {{MacroLink|Macro_FCCamera}}: This macro can rotate the screen in a defined angle and the defined axis and creates a plan to face the screen to create a form in the specified plan positions the selected face facing the screen, to detect the position of the camera ...
+* [[File:Macro_Global_Variable_Watcher.png|16px]] {{MacroLink|Macro Global Variable Watcher}}: This macro facilitates the user selecting global variables and monitoring their values.
+* {{MacroLink|Macro HighlightCommon}}: Highlight common parts.
+* [[Image:HighlightDifference.png|16px]] {{MacroLink|Macro HighlightDifference}}: Compute the difference between two shapes.
+* [[Image:PropertyMemo.png|16px]] {{MacroLink|Macro_PropertyMemo}}: This little macro create one Property additional (memo or other text) for you object (only Draft)
+* [[Image:Macro SelectVisible.png|16px]] {{MacroLink|Macro_Macro SelectVisible}}: Set of three macro, macro '''1:''' hidden the objects not selected, macro '''2:''' displayed alls objects, macro '''3:''' hidden alls objects.
+* [[Image: SelectVisible.png|16px]] {{MacroLink|Macro SelectVisible}}: All visible objects in the tree will be selected.
+* {{MacroLink|Macro cross_section}}: displays an interactively slidable cross-section.
+* [[Image: MeasureCircle.png|16px]] {{MacroLink|Macro_MeasureCircle}}: Compute the radius of a circle by 3 points or a circular edge.
+
+===Mathematical functions=== <!--T:23-->
+* {{MacroLink|Macro 3D Parametric Curve}}: Draw a function described by parametric equations x(t), y(t) and z(t).
+* {{MacroLink|Macro draw2DFunction}}: draws a function described by an equation z=F(x)
+* {{MacroLink|Macro drawParametric2Dfunction}}: Based on the above macro, but for parametric and optionally polar equations.
+
+=== Animation === <!--T:22-->
+* {{MacroLink|Macro_crank_simul}} : Rotation rod and piston
+* {{MacroLink|Macro_Spring}} : Simulation of one spring
+* {{MacroLink|Macro_hinge}} : Open and close hinge
+* {{MacroLink|Macro_Assembly}} : Assembly animate
+* {{MacroLink|Macro_Animated_Constrain}}: Animate angle constrain in sketcher
+* {{MacroLink|Macro_Assemblage_Imprimante_3D}}: Simulation of movements of a 3D printer
+
+=== Raytracing === <!--T:24-->
+* {{MacroLink|Macro_FreeCAD_to_Kerkythea}} : Export from FreeCAD to Kerkythea
+
+=== FEM === <!--T:27-->
+* {{MacroLink|Macro_GMSH}} : Create FEM Meshes by GMSH Mesh Generator
+
+=== Drawing Workbench === <!--T:28-->
+* {{MacroLink|Macro Automatic drawing}}: allows the user to get the view of his object in a drawing with 4 different position(front,top,iso,right). Needs some modification to be perfectly effective
+* {{MacroLink|Macro Corner shapes wizard}}: pops up a dialog asking for the dimensions of your corner piece, then creates the object in the document and creates a page view with top, front and lateral views of the piece
+* {{MacroLink|Macro CartoucheFC}}: This GUI macro to fill simply all fields of the cartridge of the plan implementation worksheet FreeCAD, the format of the date and the symbol of the projection mode adapt to the EU region or US selected.
+* {{MacroLink|Macro CartoucheFC Full}}) This GUI macro to fill simply all fields of the cartridge '''model 1''' of the plan implementation worksheet FreeCAD, the format of the date and the symbol of the projection mode adapt to the EU region or US selected.
+* {{MacroLink|Macro CartoucheFC 2}}) This GUI macro to fill simply all fields of the cartridge '''model 2''' of the plan implementation worksheet FreeCAD.
+* {{MacroLink|Macro_Normal_Vector}}: Get the normal vector of a preselected face for creating a drawing view normal to that face
+
+== How to use? == <!--T:8-->
+[[File:Macro Recipes MacroHowToInstall.png|200px|left|Macro how to install]]
+'''The above macros can easily be plugged on any FreeCAD installation'''
+* Copy the macro python code from the corresponding macro page
+* In FreeCAD, Macro->Macros->Create new, and give it a name
+* Paste the python code you copied
+* Hit the Save button, and restart FreeCAD
+* Open the Macro manager, select your new macro and click "execute"
+* Tutorial {{MacroLink|How to install macros}}
+
+<!--T:9-->
+'''Additionally, you can also add your new macro to a custom toolbar'''
+* In FreeCAD, go to Tools -> Customize
+* In the Macros tab, add a new macro, and, if you like, define an icon and a keyboard shortcut
+* In the Toolbars tab, create a new toolbar, and add your macro, taking it from the "Macros" category.
+* Tutorial [[Customize_ToolsBar|Customize ToolsBar]]
+{{clear}}
+
+== Adding new macros to this repository == <!--T:10-->
+* Create a new page, beginning its name with "Macro", for example "Macro_My_Excellent_Macro", this can be done simply by editing this page, and adding a new link to your macro, like this:<br /> </translate><nowiki>"[[Macro My Excellent Macro]]: My excellent macro"</nowiki>.<translate> <!--T:11-->
+A new page (red link) will be created.
+* In that page, paste the following text:
+
+<!--T:12-->
+(With the default icon)
+</translate>
+ <nowiki>{{Macro|Icon=Text-x-python|Name=Macro_My_Excellent_Macro|Description=What my excellent macro does|Author=your username}}</nowiki>
+<translate>
+<!--T:13-->
+(With the icon custom)
+</translate>
+ <nowiki>{{Macro|Icon=Macro_My_Excellent_Macro|Name=Macro_My_Excellent_Macro|Description=What my excellent macro does|Author=your username}}</nowiki>
+<translate>
+<!--T:14-->
+(Another language with the default icon (example "/fr" "/de" "/it"....))
+</translate>
+ <nowiki>{{Macro/fr|Icon=Text-x-python|Name=Macro_My_Excellent_Macro|Name/fr=Macro_My_Excellent_Macro|Description=
+ What my excellent macro does|Author=your username}}</nowiki>
+<translate>
+<!--T:15-->
+(Another language with the icon custom (example "/fr" "/de" "/it"....))
+</translate>
+ <nowiki>{{Macro/fr|Icon=Macro_My_Excellent_Macro|Name=Macro_My_Excellent_Macro|Name/fr=Macro_My_Excellent_Macro|Description=
+ What my excellent macro does|Author=your username}}</nowiki>
+<translate>
+<!--T:16-->
+*You can also [http://www.freecadweb.org/wiki/index.php?title=Special:Upload Upload ] a custom format icon'''.png'''<br />'''Note that the name of the icon must have the same name as the name of the macro'''.
+**example : " Macro_My_Excellent_Macro " '''without extension''' (the extension is given by the system), and, replace " Icon='''Text-x-python''' " by " Icon='''Macro_My_Excellent_Macro''' "
+**'''Text-x-python''' [[Image:Text-x-python.png|32px]] is the default icon of the page dedicated to the Macro.
+
+<!--T:17-->
+* Paste your macro, and use the [[Template:Code|Code template]] to avoid adding spaces into your script. This will display the macro in a monospace font inside a light grey box like the example above.
+* If you like, upload a .png icon with the exact same name as your macro page (ex. Macro_My_Excellent_Macro.png)
+* Add an image: an image is useful to show what the macro does. Optionally you can create an animated gif that represents the object in context. The gif image should have a maximum size of 500x500px as the wiki does not resize animated gifs; if the gif is any bigger the animation won't work.
+* Optionally you can add some more info on how to use your macro, tips, limitations and workaround.
+* It is also interesting to include version information in your macro. This macro allows you to locate in time compared to the evolution of FreeCAD, do "Menu > Help > About FreeCAD and click to Copy to clipboard" and paste it your macro
+
+<!--T:19-->
+Ex:
+
+</translate>
+{{Code|code=
+#OS: Windows Vista
+#Platform: 32-bit
+#Version: 0.14.3389
+#Python version: 2.6.2
+#Qt version: 4.5.2
+#Coin version: 3.1.0
+#SoQt version: 1.4.1
+#OCC version: 6.5.1
+}}
+<translate>
+<!--T:25-->
+It is also advisable to create a macro in your header, this header can be used by the [http://forum.freecadweb.org/viewtopic.php?t=10556 Plugin Loader] program to install the macro and check versions. Also available [https://github.com/FreeCAD/FreeCAD-addons addons_installer.FCMacro]
+
+<!--T:26-->
+Ex:
+</translate>
+<syntaxhighlight>
+__Title__="Title_Of_macro"
+__Author__ = "User_Name"
+__Version__ = "00.11"
+__Date__    = "25/07/2015"
+
+__Comment__ = "This is the comment of the macro"
+__Web__ = "http://forum.freecadweb.org/viewtopic.php?f=3&t=7384"
+__Wiki__ = "http://www.freecadweb.org/wiki/index.php?title=Macro_Title_Of_macro"
+__Icon__  = "/usr/lib/freecad/Mod/plugins/icons/Title_Of_macro"
+__IconW__  = "C:/Documents and Settings/YourUserName/Application Data/FreeCAD"
+__Help__ = "start the macro and follow the instructions"
+__Status__ = "stable"
+__Requires__ = "freecad 0.14.3706"
+__Communication__ = "http://www.freecadweb.org/wiki/index.php?title=User:User_Name"
+</syntaxhighlight>
+<translate>
+
+<!--T:21-->
+* Add it to the above categories, create a new category if needed.
+
+<!--T:18-->
+[[Category:User Documentation]]
+[[Category:Repository]]
+[[Category:Macros]]
+[[Category:Python Code]]
+[[Category:Tutorials]]
+</translate>
+<languages/>
+
